@@ -1,5 +1,56 @@
 // Place your key bindings in this file to override the defaults
 [
+  // Terminal navigation
+  {
+    "key": "control+a",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "control+b",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "control+j",
+    "command": "workbench.action.togglePanel",
+  },
+  {
+    "key": "control+n",
+    "command": "workbench.action.terminal.new",
+  },
+  // File tree
+    {
+    "command": "workbench.action.toggleSidebarVisibility",
+    "key": "ctrl+e"
+  },
+  {
+    "command": "workbench.files.action.focusFilesExplorer",
+    "key": "ctrl+e",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "%",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "renameFile",
+    "key": "R",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "d",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "command": "deleteFile",
+    "key": "D",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+
+  //VS code standards
   {
     "key": "ctrl+up",
     "command": "git.stage",

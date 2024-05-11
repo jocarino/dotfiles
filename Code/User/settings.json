@@ -2,12 +2,95 @@
   "git.autoStash": true,
   "git.autofetch": true,
   "files.eol": "\n",
+
+  "editor.lineNumbers": "relative",
+  "vim.leader":"<Space>",
+  "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": false,
+    "vim.hlsearch": true,
+ "vim.normalModeKeyBindingsNonRecursive": [
+        //Move between tabs/buffers
+        {
+            "before": [
+                "t",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "t",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ],
+            "silent": true
+        },{
+            "before": [
+                "t",
+                "n"
+            ],
+            "commands": [
+                "workbench.action.files.newUntitledFile"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "t",
+                "d"
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ],
+            "silent": true
+        }
+  //Split panes
+  ,{"before":["leader","p","v"],"commands":[":vsplit"]},
+  {"before":["leader","p","s"],"commands":[":vsplit"]},
+  
+  //Move between panes
+  {"before":["leader","p","h"],"commands":["workbench.action.focusLeftGroup"]},
+  {"before":["leader","p","j"],"commands":["workbench.action.focusBelowGroup"]},
+  {"before":["leader","p","k"],"commands":["workbench.action.focusAboveGroup"]},
+  {"before":["leader","p","l"],"commands":["workbench.action.focusRightGroup"]},
+
+  // toggle comment selection
+  { "before": ["leader", "c","c"], "commands": ["editor.action.commentLine"]},
+  // Error Handling
+  { "before": ["leader", "c","e"], "commands": ["View.NextError"]},
+  { "before": ["leader", "c","r"], "commands": ["View.PreviousError"]},
+
+  // Lazy git
+{
+            "before": [
+                "<leader>",
+                "l",
+                "g"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.tasks.runTask",
+                    "args": [
+                        "lazygit"
+                    ]
+                }
+            ],
+            "silent": false
+        }
+ ], 
   "[python]": {
     "editor.formatOnType": true,
     "editor.defaultFormatter": "ms-python.python"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[php]": {
@@ -32,16 +115,12 @@
   "phpsab.docker.dockerExecutablePathCS": "vendor/bin/phpcs",
   "phpsab.docker.dockerWorkspaceRoot": "usr/src/app",
   "phpsab.docker.standard": "",
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["k", "j"],
-      "after": ["<Esc>"]
-    }
-  ],
+
   "editor.formatOnSave": true,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "window.zoomLevel": 1,
   "remote.autoForwardPortsSource": "hybrid",
   "debug.javascript.autoAttachFilter": "always",
   "[yaml]": {
@@ -51,5 +130,6 @@
     "editor.autoIndent": "advanced",
     "diffEditor.ignoreTrimWhitespace": false
   },
-  "window.zoomLevel": 1
+  "editor.minimap.enabled": false,
+  "editor.suggest.showStatusBar": true,
 }
