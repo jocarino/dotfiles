@@ -1,0 +1,55 @@
+{
+  "git.autoStash": true,
+  "git.autofetch": true,
+  "files.eol": "\n",
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[php]": {
+    "editor.defaultFormatter": "mtbdata.vscode-phpsab-docker"
+  },
+  "workbench.sideBar.location": "right",
+  "phpcs.composerJsonPath": "\\\\wsl.localhost\\Ubuntu\\home\\joao\\.config\\composer\\compose.json",
+  "phpcbf.standard": "\\wsl.localhost\\Ubuntu\\home\\joao\\Dev\\content-service\\app\\vendor\\drupal\\coder\\phpcs.xml.dist",
+  "phpsab.standard": "\\wsl.localhost\\Ubuntu\\home\\joao\\Dev\\content-service\\app\\vendor\\drupal\\coder\\phpcs.xml.dist",
+  "phpsab.composerJsonPath": "\\\\wsl.localhost\\Ubuntu\\home\\joao\\.config\\composer\\compose.json",
+  "phpsab.docker.debug": true,
+  "phpsab.docker.allowedAutoRulesets": [
+    ".phpcs.xml",
+    ".phpcs.xml.dist",
+    "phpcs.xml",
+    "phpcs.xml.dist",
+    "phpcs.ruleset.xml",
+    "ruleset.xml"
+  ],
+  "phpsab.docker.dockerEnabled": true,
+  "phpsab.docker.dockerExecutablePathCBF": "vendor/bin/phpcbf",
+  "phpsab.docker.dockerExecutablePathCS": "vendor/bin/phpcs",
+  "phpsab.docker.dockerWorkspaceRoot": "usr/src/app",
+  "phpsab.docker.standard": "",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "editor.formatOnSave": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "remote.autoForwardPortsSource": "hybrid",
+  "debug.javascript.autoAttachFilter": "always",
+  "[yaml]": {
+    "editor.formatOnSave": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "diffEditor.ignoreTrimWhitespace": false
+  },
+  "window.zoomLevel": 1
+}
